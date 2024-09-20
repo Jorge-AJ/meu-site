@@ -1,0 +1,198 @@
+<!DOCTYPE html> 
+
+<Html> 
+    <head>
+        <title>Show do Jorjão</title>
+        <meta name="description" content="O Jogo que você vai testar seus conhecimentos otaku valendo 1 milhão de reais!">
+    </head> 
+    <body> 
+        <header> 
+            <h1>Show do Jorjão para otakus</h1> 
+            <p>Teste seus conhecimentos e prove que você é um otaku!</p>
+    </header>
+    <section> 
+        <h2>Sobre esse jogo</h2> 
+        <p><strong>Esse jogo foi desenvolvido por mim</strong>para <em>testar você otaku poser</em></p>
+        <p>Nele você encontrará desafios que para um poser será <br><strong>impossivel de responder!</strong></br></p>
+        <p>Vamos de naruto que é o meu favorito ate o anime mais chato de todos <abbr title="ONE PIECE">OP</abbr></p>
+    </section> 
+        <main>  
+            <!--Essa é a tag para fazer comentarios no htma-->
+            <!--Introdução-->
+            <section>
+            </section>
+            <!--Pergunta 1: Múltipla escolha-->
+            <section>
+                <h2>Pergunta 1: quem é o personagem mais gostoso de Jujutsu Kaisen?</h2>
+                <!--Essa tag form é para dar opções de escolha para usuario como uma prova multipla escolha e tiramos o action pois não usaremos-->
+                <form>
+                    <!--agora usamos a tag input para o usuario poder escolher o que ele quer dar as opçoes pra ele mas não queremos o text que ja vem e usamos o radio-->
+                    <input type="radio" value="Itadore-kun" id="p1a" name="pergunta1"> <!--agora escrevemos atributo do lado das aspas para saber o valor o que usuario escolheu o naco value, id interagem com javascript mas é para interagir com a opção em si p1a(pergunta 1 opção a, name nesse caso linka com a pergunta que estamos fazendo ) -->
+                    <label for="p1a">Itadore-kun</label><br> <!--ele faz com que tudo que está escrito no label vá para opção a se escolher -->
+                    <input type="radio" value="Nanami-Sempai" id="p1b" name="pergunta1">
+                    <label for="p1b">Nanami-Sempai</label><br>
+                    <input type="radio" value="Mahito: se escolher ele você precisa de tratamento" id="p1c" name="pergunta1">
+                    <label for="p1c">Mahito: se escolher ele você precisa de tratamento</label><br>
+                    <input type="radio" value="Getou cabeça de vento" id="p1d" name="pergunta1">
+                    <label for="p1d">Getou cabeça de vento</label><br>
+                </form>
+            </section>
+            <!--Pegurnta 2: Texto-->
+            <section>
+                <h2>Pergunta 2: No anime Naruto o personagem principal Naruto se casa com a Hinata mas todos sabemos que ele deveria se casar com outra pessoa, neste sentido diga quem é essa pessoa e por que?</h2>
+                <form> <!--aqui usamos o input com opção text para a pessoa poder escrever a resposta e ele vai dentro da tag form-->
+                    <input type="text" id="p2" name="pergunta2" placeholder="Hable sobre a questão aqui..."> <!--placeholder é um texto padrão enquanto a pessoa não escreveu nada no campo de texto-->
+                </form>
+            </section>
+            <!--Pergunta 3: senha-->
+            <section>
+                <h2>Pergunta 3: Escreva aqui o que você faria com o Zoro em um encontro safadinha(o)?</h2>
+                <!--usamos o form e usamos o input dentro do form mas dessa vez usamos o password em vez de text-->
+                <form>
+                    <input type="password" id="p3" name="pergunta3" placeholder="conte seu segredo hihi">
+                </form>
+            </section>
+            <!--Pergunta 4: data-->
+            <section>
+                <h2>Em que ano saiu o primeiro mangá de One Piece (Ué não era você o fãzão de pirata, diz ai então maluco)</h2>
+                <!--aqui usamos o input em vez de text, usamos date já que é uma data que sera usado como resposta-->
+                <form>
+                    <input type="date" id="p4" name="pergunta4">
+                </form>
+            </section>
+            <!--Pergunta 5: seleção múltipla-->
+            <section>
+                <h2>Pergunta 5: Quais desses Hashiras você casa, mata ou beija?</h2>
+            <!--dessa vez dentro do form o nosso input será checkbox a diferença ao radio é que você consegue selecionar mais de 1 opção-->
+            <form>
+                <input type="checkbox" id="p5a" name="pergunta5" value="Gyo-Tomioka">
+                <label for="p5a">Gyo-Tomioka</label><br>
+                <input type="checkbox" id="p5b" name="pergunta5" value="Obanai Iguro">
+                <label for="p5b">Obanai Iguro</label><br>
+                <input type="checkbox" id="p5c" name="pergunta5" value="Mitsuri Kanroji">
+                <label for="p5c">Mitsuri Kanroji</label><br>
+                <input type="checkbox" id="p5d" name="pergunta5" value="Tengen Uzui">
+                <label for="p5d">Tengen Uzui</label><br>
+            </section>  
+            <!--Pergunta 6: upload de arquivo-->
+            <section>
+                <h2>Pergunta 6: Faça o upload de um arquivo contendo código HTML escrito "Ai Kakashi Sempai"</h2>
+                <!--Nesse caso como sera o upload de um arquivo usaremos o form depois apagamos o action, e dentro dele colocamos o input substituindo o text por file-->
+                <form>
+                    <input type="file" id="p6" name="pergunta6">
+                </form>
+            </section>
+            <!--Pergunta 7: Menu suspenso-->
+            <section>
+                <h2>Selecione o personagem mais querido de todos os tempo</h2>
+                <!--dessa vez usaremos a tag select em vez do input-->
+                <form>
+                    <select name="pergunta7" id="p7">
+                        <!--agora usamos a tag option-->
+                        <option value="Shigeo Kageyama">Shigeo Kageyama</option>
+                        <option value="Arataka Reigen">Arataka Reigen</option>
+                        <option value="Covinhas">Covinhas</option>
+                        <option value="Teruki Hanazawa">Shigeo Kageyama</option>
+                    </select>
+                </form>
+            </section>
+            <!--Pergunta 8: imagem-->
+            <section>
+                <h2>Quem é esse pokemon?</h2>
+                <!--tag para adicionar imagem é a img -->
+                <img src="./assets/qeep.jpg" alt="Imagem com a forma de um pokemon escurecida"><br> <!--quando criamos uma pasta no caso assets para as imagens precisamos endereçar no src com ./assets(nesse caso é o nome da pasta)/nome da imagem-->
+                <!--agora com essa tag colocaremos uma legenda embaixo da imagem e usamos a tag figcaption-->
+                <figcaption>Figura 1: Silhueta de um pokemon.</figcaption>
+                <input type="text" id="p8" name="pergunta8" placeholder="Digite sua Resposta">
+                </form>
+            </section>
+            <!--tabela de pontuação-->
+            <section>
+                <h2>Tabela de pontuação</h2>
+                <!--tag da tabela é a table com atributo border se cria uma tabela tipo excel, a tabela no html é montada por linhas-->
+                <table border="1">
+                    <!--tag de linha por linha tr table roll, tag para criar o cabeçalho thead-->
+                    <thead> <!--depois do thead usamos a tag tboody que é tudo que estavamos adicionando até o momento-->  
+                        <tr> <!--tr novamente para adicionar uma linha no cabeçalho-->
+                            <th>Pontuação</th> <!--para as informações usamos th-->
+                            <th>Avaliação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!--table data de informçaõ serve para as linhas de resultado-->
+                            <td>0-2</td>
+                            <td>Que poserzinho você é em!</td>
+                        </tr>
+                        <tr>
+                            <td>3-4</td>
+                            <td>Nhé!</td>
+                        </tr>
+                        <tr>
+                            <td>5-6</td>
+                            <td>Calma lá paizão até que tu é bão em!</td>
+                        </tr>
+                        <tr>
+                            <td>7-8</td>
+                            <td>Ui olha ele, es um otaku fedido!</td>
+                        </tr>
+                        <tr>
+                            <td>9-10</td>
+                            <td>É não ironicamente, arrasou besha!</td>
+                        </tr>  
+                </tbody> <!--Fechamos ele no final da tabela antes da tah table-->  
+                <tfoot> <!--essa tag tfoot é para criar um rodapé onde estamos fazendo a tabela ou outros-->
+                    <tr>
+                        <td colspan="2">Boa sorte na proxima otakete</td> <!--Aqui colocamos o colspan dentro do sinal maior para que essa linha ocupe duas colunas o atributo vai dentro do td.-->
+                    </tr>
+                </tfoot>    
+                </table>
+            </section>
+            <!--Listas de Respostas-->
+            <section>
+                <h2>Verifique suas respostas</h2>
+                <details> <!--Tag details é para esconder é ficar clicavel para aparecer as opções-->
+                    <summary>Clique aqui para ver as respostas</summary> <!--A tag summary é usada pra trocar o nome do padrão que vem na tag details-->
+                    <ol> <!--tag ul cria uma lista pra gente--> <!--Trocamos o ul para o ol que é a lista numerada-->
+                        <li>Nanami-Sempai</li> <!--para cada item usamos a tag li-->
+                        <li>Sasuke né, se escreveu outra coisa é burro.</li>
+                        <li>Essa é ponto ganho qualquer coisa com aquele delicia ta certo.</li>
+                        <li>24/12/1997 até eu que não gosto sei e tu não. ai ai !</li>
+                        <li>Essa é ponto ganho também kkk, qualquer um pra tudo ta ótimo.</li>
+                        <li>Agora vai saber se você sabe que tem que saber pra poder saber e saberá.</li>
+                        <li>Shiegeo Kageyama</li>
+                        <li>Pikachu cacete.</li>
+                    </ol>
+            </details>
+            </section>
+            <!--Formulário de feedback-->
+            <section>
+                <h2>Nos de o seu feedback</h2>
+                <form>
+                    <fieldset> <!--envolve o formulario ela cria uma area para ficar no formulario-->
+                                <legend>Informações de contato</legend> <!--cria uma legenda no fio do fieldset-->
+                                <label for="name">Nome:</label>
+                                <input type="text" id="name" name="nome"><br>
+                                <label for="name">Email:</label>
+                                <input type="email" id="email" name="email"><br> <!--aqui é a tag certa para emails ele verifica se usuario colocou @ ou se está correto a digitação-->
+                                <label for="comentarios">Comentários</label><br>
+                                <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Digite seus comentários aqui."></textarea><br> <!--Aqui usamos a tag textarea que é um campo maior para digitação e o atributo rows é para quantidade de linhas, cols é para o numero de colunas e o placeholder é o texto padrão que fica na caixa -->
+                                <button onclick="alert('FEEDBACK ENVIADO')">Envie o feedback</button> <!-- Aqui colocamos a tag button para criar um botão e usamos o atributo onclick e usamos o alert veja que antes do alert esta com "aspas duplas" e na função alert está com 'aspas simples'-->
+                    </fieldset>
+                    
+                </form>
+            </section>
+        </main>     
+        <footer> <!--Tag do roda pé-->
+            <p>&copy;Show do Jorjão para otakus. Todos os direitos reservados.</p> <!-- aqui usamos no inicio <p>&copy; pois para colocar simbolos é necessario usar o & e depois a tag do simbolo nesse caso do direitos reservados copy;-->
+            <p>Para mais informções sobre mim <a href="sobremim.html" target="_blank">Clique aqui.</a></p> <!--aqui a tag a é a tag ancora usada como um saiba mais, ao clicar você é direcionado para uma nova pagina determinada e usamos o target="_blank para que abra uma nova aba e o usuario não saia do nosso site-->
+        </footer> 
+    </body> 
+ 
+
+
+
+
+
+
+</Html>
